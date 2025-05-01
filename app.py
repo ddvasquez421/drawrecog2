@@ -23,19 +23,23 @@ def encode_image_to_base64(image_path):
 
 # Streamlit 
 st.set_page_config(page_title='Tablero Inteligente', page_icon=":skull:")
-# Personalización de CSS para estilo gótico
+# Personalización de CSS para estilo gótico y texto rojo neón
 st.markdown("""
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+        
         body {
             background-color: #000000;
-            color: #CCCCCC;
-            font-family: 'Cinzel', serif;
+            color: #FF0000;  /* Color rojo neón */
+            font-family: 'Creepster', cursive;
+            text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000, 0 0 15px #FF0000;
         }
         h1, h2, h3, h4, h5, h6 {
             color: #FF0000;
+            text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000;
         }
         .stTextInput input {
-            color: #FFFFFF;
+            color: #FF0000;
             background-color: #333333;
         }
         .stButton>button {
@@ -44,10 +48,10 @@ st.markdown("""
         }
         .stSlider>div>div>input {
             background-color: #333333;
-            color: #FFFFFF;
+            color: #FF0000;
         }
         .stTextArea>textarea {
-            color: #FFFFFF;
+            color: #FF0000;
             background-color: #333333;
         }
         .stCanvas {
